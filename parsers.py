@@ -1,15 +1,12 @@
-import json
 import time
-import requests
-from bs4 import BeautifulSoup
-import lxml
 from selenium.common import NoSuchElementException
-from tqdm import tqdm
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from tools import logger
 
 # функция для парсинга с помощью Selenium
 
+@logger(path='main.log')
 def selenium_parse(url: str) -> list:
     options_chrome = webdriver.ChromeOptions()
     options_chrome.add_argument('--headless')
@@ -37,6 +34,7 @@ def selenium_parse(url: str) -> list:
 # функция, реализующая парсинг с помощью Requests. Внутри также чистка от символов,
 # на которых спотыкается запись в json. С помощью ловли ошибок ловлю ситуацию, когда з/п не указана
 
+@logger(path='main.log')
 def request_parse(all_vacans: list) -> list:
     data = {}
     all_data = []

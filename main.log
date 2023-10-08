@@ -1,0 +1,10 @@
+Time start: 2023-10-08 17:06:31.647725
+Function name: request_parse
+Arguments: <class 'tuple'>,{}
+Result: [{'name': 'Full-stack разработчик (PHP, AI)', 'link': 'https://barnaul.hh.ru/vacancy/87745680?from=vacancy_search_list&hhtmFrom=vacancy_search_list&query=Python%2C+Django%2C+Flask', 'salary': '3 500 – 4 800 $', 'company': 'Americor Funding Inc', 'city': 'Москва'}, {'name': 'Python Developer', 'link': 'https://barnaul.hh.ru/vacancy/87131742?from=vacancy_search_list&hhtmFrom=vacancy_search_list&query=Python%2C+Django%2C+Flask', 'salary': 'до 2 700 $', 'company': 'CLS Global', 'city': 'Москва'}]
+
+Time start: 2023-10-08 17:07:04.539148
+Function name: request_parse
+Arguments: <class 'tuple'>,{}
+Result: [{'name': 'Full-stack разработчик (PHP, AI)', 'link': 'https://barnaul.hh.ru/vacancy/87745680?from=vacancy_search_list&hhtmFrom=vacancy_search_list&query=Python%2C+Django%2C+Flask', 'salary': '3 500 – 4 800 $', 'company': 'Americor Funding Inc', 'city': 'Москва'}, {'name': 'Python Developer', 'link': 'https://barnaul.hh.ru/vacancy/87131742?from=vacancy_search_list&hhtmFrom=vacancy_search_list&query=Python%2C+Django%2C+Flask', 'salary': 'до 2 700 $', 'company': 'CLS Global', 'city': 'Москва'}]
+

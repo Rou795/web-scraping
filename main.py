@@ -38,7 +38,6 @@ if __name__ == '__main__':
 
     soup = BeautifulSoup(response.text, 'lxml')
     vacancion_nums = int(soup.select_one('h1.bloko-header-section-3').text.split()[0])
-    print(vacancion_nums)
     pages = (vacancion_nums // 20)
     if vacancion_nums % 20 != 0:
         pages += 1
@@ -53,8 +52,8 @@ if __name__ == '__main__':
         soup = BeautifulSoup(response.text, 'lxml')
         vacans = soup.select('.vacancy-serp-item-body')
         all_vacans.extend(vacans.copy())
-    print(len(all_vacans))
-    print(vacancion_nums)
+#    print(len(all_vacans))
+#    print(vacancion_nums)
     if len(all_vacans) < vacancion_nums:
         print('Рекомендуем использовать Selenium. Requests пропустит вакансии')
 
